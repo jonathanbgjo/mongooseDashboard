@@ -1,0 +1,15 @@
+<html>
+    <head>
+    </head>
+    <body>
+    	<form action='/mongooses/update/<%=users[0]._id%>' method='post'>
+    		  <input type='text' name = 'name' value = "<%=users[0].name%> "><br>
+              <input type='text' name = 'age' value = "<%=users[0].age%>"><br>
+              <input type ='text' name = 'comment' value = "<%=users[0].comment%>"></textarea><br>
+            <input type='submit'  value='update animal!'>
+        </form>
+        <form action='/' method='get'>
+            <input type='submit'  value='Skip'>
+        </form>
+    </body>
+</html>	

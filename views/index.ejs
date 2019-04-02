@@ -1,0 +1,13 @@
+<html>
+    <head>
+    </head>
+    <h1>Here are the awesome mongooses brew!</h1>
+    <% for(let x =0; x < users.length; x++){%>
+    <p>- <a href="/mongooses/<%=users[x]._id%>" >Name: <%=users[x].name%> </a> <br><a href="mongooses/edit/<%=users[x]._id%>">Edit User</a> </p>
+    <p>Age: <%=users[x].age%></p>
+    <p>"<%=users[x].comment%>"</p>
+    <p><a href="/mongooses/delete/<%=users[x]._id%>">Delete this B</p>
+    <hr><%}%> 
+    <p><a href="/new">Create</p>
+    </body>
+</html>	
